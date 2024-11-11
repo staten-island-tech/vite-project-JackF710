@@ -1,0 +1,214 @@
+html, body, *{
+  margin, padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+:root{
+  --font-family-all: 'Bebas Neue', sans-serif;
+
+  --primary-chroma: #060000;
+  --tertiary-chroma: #cab5b4;
+  --secondary-chroma: #134706;
+  --font-color-chroma: white;
+
+  --primary-call: white;
+  --tertiary-call: #bfdff7;
+  --secondary-call: #73d15c;
+  --font-color-call: black;
+
+  --primary-igor: #eeafc2;
+  --tertiary-igor: rgb(63, 63, 63);
+  --secondary-igor: #a1a1a1;
+  --font-color-igor: white;
+
+  --primary-flower: #f8b960;
+  --tertiary-flower: #aa3b27;
+  --secondary-flower: #000000;
+  --font-color: black;
+
+  --p: 1rem;
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+}
+h1{
+  font-size: var(--h1);
+  color: var(--font-color);
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h2{
+  font-size: var(--h2);
+  color: var(--font-color);
+  text-align: center;
+}
+h3{
+  font-size: var(--h3);
+  color: var(--font-color);
+  text-align: center;
+}
+h4{
+  font-size: var(--h4);
+  color: var(--font-color);
+  text-align: center;
+}
+h5{
+  font-size: var(--h5);
+  color: var(--font-color);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+  font-size: var(--p);
+  text-align: center;
+  color: var(--primary);
+}
+
+body{
+  background-color: var(--primary);
+}
+
+.chromakopia{
+  --primary: var(--primary-chroma);
+  --tertiary: var(--tertiary-chroma);
+  --secondary: var(--secondary-chroma);
+  --font-color: var(--secondary-chroma);
+  --font-family: var(--font-family-all);
+}
+.cmiygl{
+  --primary: var(--primary-call);
+  --tertiary: var(--tertiary-call);
+  --secondary: var(--secondary-call);
+  --font-color: var(--secondary-call);
+  --font-family: var(--font-family-all);
+}
+.igor{
+  --primary: var(--primary-igor);
+  --tertiary: var(--tertiary-igor);
+  --secondary: var(--secondary-igor);
+  --font-color: var(--font-color-igor);
+  --font-family: var(--font-family-all);
+}
+.flower{
+  --primary: var(--primary-flower);
+  --tertiary: var(--tertiary-flower);
+  --secondary: var(--secondary-flower);
+  --font-color: var(--font-color-flower);
+  --font-family: var(--font-family-all);
+}
+
+.song{
+  background-color: var(--tertiary);
+  border-radius: 10%;
+  border-color: var(--secondary);
+  border: solid;
+  width: 30%;
+  margin-top: 5%;
+  font-family: var(--font-family);
+  transition: 0.5s;
+}
+.song:hover{
+  transform: scale(1.09);
+  --font-color: var(--primary);
+}
+
+#songsList {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+#albumsorterC{
+  background-color: var(--secondary-chroma);
+  color: var(--tertiary-chroma);
+  border-radius: 10%;
+  border: solid;
+  border-color: var(--primary-chroma);
+  width: 20%; 
+  height: 70px; 
+  padding: 15px; 
+  font-size: 22px; 
+  font-family: 'Bebas Neue', sans-serif;
+  transition: 0.5s;
+  margin-left: 10%;
+}
+#albumsorterC:hover{
+  background-color: var(--tertiary-chroma);
+  color: var(--secondary-chroma);
+  transform: scale(1.10);
+}
+#albumsorterI{
+  background-color: var(--primary-igor);
+  color: var(--tertiary-igor);
+  border-radius: 10%;
+  border: solid;
+  border-color: var(--secondary-igor);
+  width: 20%; 
+  height: 70px; 
+  padding: 15px; 
+  font-size: 22px; 
+  margin-left: 7px;
+  font-family: 'Lobster', cursive;
+  transition: 0.5s;
+}
+#albumsorterI:hover{
+  background-color: var(--secondary-igor);
+  color: var(--primary-igor);
+  transform: scale(1.10);
+}
+#albumsorterCM{
+  background-color: var(--tertiary-call);
+  color: var(--secondary-call);
+  border-radius: 10%;
+  border: solid;
+  border-color: var(--primary-call);
+  width: 20%; 
+  height: 70px; 
+  padding: 15px; 
+  font-size: 22px; 
+  margin-left: 7px;
+  font-family: 'Pacifico', cursive;
+  transition: 0.5s;
+}
+#albumsorterCM:hover{
+  background-color: var(--secondary-call);
+  color: var(--tertiary-call);
+  transform: scale(1.10);
+}
+#albumsorterFB{
+  background-color: var(--tertiary-flower);
+  color: var(--primary-flower);
+  border-radius: 10%;
+  border: solid;
+  border-color: var(--secondary-flower);
+  height: fit-content;
+  width: 20%; 
+  height: 70px; 
+  padding: 15px; 
+  font-size: 22px; 
+  margin-left: 7px;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.5s;
+}
+#albumsorterFB:hover{
+  background-color: var(--primary-flower);
+  color: var(--tertiary-flower);
+  transform: scale(1.10);
+}
+#albumDisplayC {
+  margin-left: 10%;
+}
+img {
+  width: 20%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10%;
+  align-items: center;
+  padding: 15px;
+  margin-left: 7px;
+  margin-bottom: 30px;
+  border-color: var(--tertiary);
+}
