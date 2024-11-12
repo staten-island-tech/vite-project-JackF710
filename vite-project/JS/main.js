@@ -57,3 +57,12 @@ albumsorterFB.addEventListener("click", () => {
   document.body.classList.remove("igor");
   document.body.classList.add("flower");
 });
+
+albumsorterAll.addEventListener("click", () => {
+  showsongs(songs);
+  document.body.classList.remove("igor");
+  document.body.classList.remove("cmiygl");
+  document.body.classList.remove("flower");
+  document.body.classList.remove("chromakopia");
+  document.body.classList.add("all");
+});

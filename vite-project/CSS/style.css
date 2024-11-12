@@ -121,6 +121,7 @@ body{
   display: flex;
   justify-content: space-between;
 }
+
 #albumsorterC{
   background-color: var(--secondary-chroma);
   color: var(--tertiary-chroma);
@@ -196,6 +197,23 @@ body{
 #albumsorterFB:hover{
   background-color: var(--primary-flower);
   color: var(--tertiary-flower);
+  transform: scale(1.10);
+}
+#albumsorterAll{
+  border-radius: 10%;
+  border: solid;
+  border-color: var(--primary-chroma);
+  width: 20%; 
+  height: 70px; 
+  padding: 15px; 
+  font-size: 22px; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: 0.5s;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 2%;
+}
+#albumsorterAll:hover{
   transform: scale(1.10);
 }
 #albumDisplayC {
