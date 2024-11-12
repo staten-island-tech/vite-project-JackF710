@@ -47,7 +47,6 @@ albumsorterCM.addEventListener("click", () => {
   document.body.classList.remove("igor");
   document.body.classList.remove("flower");
   document.body.classList.add("cmiygl");
-
 });
 
 albumsorterFB.addEventListener("click", () => {
